@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Try it Yourself</title>
+        <link rel="stylesheet" href="style.css"></link>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a class="navbar-brand">
+                Carla Codes
+            </a>
+        </nav>
+        <div class="title">
+            <h1>Try it Yourself Editor</h1>
+            <p>Write some HTML, CSS, and JavaScript to test it out!</p>
+            <input type="button" value="Run" class="btn btn-primary" onclick="tryIt()">
+        </div>
+        <div class="content">
+            <textarea class="box" id="input"><!---Write your code here --></textarea>
+            <div class="arrow">
+                &#x27A1;
+            </div>
+            <div class="box" id="output">
+
+            </div>
+        </div>
+    </body>
+
+</html>
+
+<script type="text/javascript">
+    function tryIt(){
+        var code = document.getElementById("input").value;
+        document.getElementById("output").innerHTML = code;
+    }
+
+</script>
